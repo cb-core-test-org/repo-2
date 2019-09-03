@@ -25,7 +25,9 @@ spec:
       }
       steps {
         container('golang') {
-          sh 'env | sort'
+          sh 'go version'
+        }
+        container('golang-kenny') {
           sh 'go version'
         }
       }
