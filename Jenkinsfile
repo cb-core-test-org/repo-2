@@ -24,6 +24,9 @@ spec:
         container('golang') {
           sh 'go version'
         }
+        container('curl') {
+          sh 'curl example.com'
+        }
       }
     }
   }
