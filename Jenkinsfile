@@ -20,9 +20,6 @@ spec:
   }
   stages {
     stage('Handle master') {
-      when {
-        branch 'master'
-      }
       steps {
         container('golang') {
           sh 'go version'
