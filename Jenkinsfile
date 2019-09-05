@@ -23,6 +23,7 @@ spec:
       steps {
         container('golang') {
           sh 'go version'
+          sh 'env | sort'
         }
         container('curl') {
           sh 'curl example.com'
